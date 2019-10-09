@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/sass/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--bootstrap min-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <!--google fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--font awersome-->
+    <link rel="stylesheet" href="../lib/css/emoji.css">
+    <!--emoji css-->
+    <link rel="stylesheet" href="../assets/sass/animate.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="popup popup-create-post">
+            <div class="popup-create-post-header">
+                <div class="popup-create-post-header-hint">
+                    Создание поста
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </div>
+                <button class="review">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    Предпросмотр
+                </button>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="popup-create-post-editor">
+                <div class="editor-top-actions">
+                    <div class="network-link">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="popup-create-post-editor-textarea">
+                    <p class="lead emoji-picker-container">
+                        <textarea class="form-control textarea-control" rows="3" placeholder="Напишите пост" data-emojiable="true"></textarea>
+                    </p>
+                </div>
+                <div class="editor-bottom-actions">
+                    <div class="editor-bottom-actions-holder holder-float-left">
+                        <div class="add-link-holder">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                        </div>
+                        <div class="add-photo-holder">
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                        </div>
+                        <div class="add-geo-holder">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="add-pol-holder">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                        <div class="une-preset-holder">
+                            <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <label class="switch">
+                        <div class="switch-text">
+                            Повторяемый
+                        </div>
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="create-post-btns">
+                <div class="btns">
+                    <button class="cancel-btn">Отмена</button>
+                    <button class="plan-btn">Запланировать</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup-settings">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="settings-menu">
+        <div class="project-name">
+            <div class="avatar">
+                <span>T</span>
+            </div>
+            <div class="project-name-name">Test project</div>
+        </div>
+        <button class="create-post-btn">Написать пост</button>
+        <div class="set-list posts">
+            <input type="radio" id="menu-radio1" name="menu-settings-radio" class="menu-settings-input">
+            <label for="menu-radio1">
+                <i class="fa fa-calendar" aria-radio="true"></i>
+                Посты
+            </label>
+
+        </div>
+        <div class="set-list filters">
+            <input type="radio" id="menu-radio2" name="menu-settings-radio" class="menu-settings-input" checked>
+            <label for="menu-radio2">
+                <i class="fa fa-sliders" aria-radio="true"></i>
+                Фильтр постов
+            </label>
+        </div>
+        <div class="set-list settings">
+            <input type="radio" id="menu-radio3" name="menu-settings-radio" class="menu-settings-input">
+            <label for="menu-radio3">
+                <i class="fa fa-cogs" aria-radio="true"></i>
+                Настройки
+            </label>
+        </div>
+        <div class="set-list alanytics">
+            <input type="radio" id="menu-radio4" name="menu-settings-radio" class="menu-settings-input">
+            <label for="menu-radio4">
+                <i class="fa fa-line-chart" aria-radio="true"></i>
+                Аналитика
+            </label>
+        </div>
+    </div>
+    <div class="top-menu">
+        <ul>
+            <li>Сегодня</li>
+            <li><i aria-hidden="true" class="fa fa-chevron-left"></i></li>
+            <li><i aria-hidden="true" class="fa fa-chevron-right"></i></li>
+            <li>Октябрь 2019</li>
+        </ul>
+        <!--top center menu-->
+        <input type="radio" id="timetable" name="top-menu-radio" class="top-settings-input" checked>
+        <label for="timetable">Расписание</label>
+        <input type="radio" id="draft" name="top-menu-radio" class="top-settings-input">
+        <label for="draft">Черновики</label>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/transition-enter.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <!-- Begin emoji-picker JavaScript -->
+    <script src="../lib/js/config.js"></script>
+    <script src="../lib/js/util.js"></script>
+    <script src="../lib/js/jquery.emojiarea.js"></script>
+    <script src="../lib/js/emoji-picker.js"></script>
+    <!-- End emoji-picker JavaScript -->
+    <script src="../assets/js/wow.min.js"></script>
+    <script>
+        $(function() {
+            // Initializes and creates emoji set from sprite sheet
+            window.emojiPicker = new EmojiPicker({
+                emojiable_selector: '[data-emojiable=true]',
+                assetsPath: '../lib/img/',
+                popupButtonClasses: 'fa fa-smile-o'
+            });
+            // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+            // You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+            // It can be called as many times as necessary; previously converted input fields will not be converted again
+            window.emojiPicker.discover();
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

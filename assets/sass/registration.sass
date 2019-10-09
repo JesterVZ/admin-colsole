@@ -1,0 +1,63 @@
+$input-border-color: #dbdbdb
+$blue-color: #099ebb
+*
+    transition: 0.5s
+body
+    font-family: 'Noto Sans', sans-serif
+    margin: 0
+input
+    outline: none
+button
+    outline: none !important
+    border: none
+    cursor: pointer
+::placeholder
+    color: $input-border-color
+.registration-top-menu
+    width: 100%
+    ul
+        float: right
+        margin: 0
+        margin-top: 10px
+        margin-right: 20px
+        li
+            display: inline-block
+            margin-left: 30px
+        li:hover
+            color: $blue-color
+            cursor: pointer
+            transform: translateY(5px)
+.registration-block
+    display: inline-block
+    width: 100%
+    text-align: center
+    margin-top: 300px
+    .registration-block-header
+        font-size: 50px
+        margin-bottom: 40px
+.input-block-header
+    color: #adadad
+    font-size: 13px
+    margin-bottom: 10px
+.input-block
+    margin-bottom: 10px
+    input
+        height: 30px
+        border: 1px solid $input-border-color
+        border-radius: 5px
+        color: $input-border-color
+        width: 200px
+        padding-left: 10px
+    input:focus
+        width: 250px
+    .registration-btn
+        width: 200px
+        height: 30px
+        background-color: $blue-color
+        color: #fff
+        border-radius: 20px
+        margin-bottom: 10px
+        font-size: 15px
+        margin-top: 10px
+    .registration-btn:hover
+        background-color: #0db6d8

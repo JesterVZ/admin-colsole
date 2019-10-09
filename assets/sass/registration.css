@@ -1,0 +1,109 @@
+* {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: #dbdbdb;
+}
+
+:-ms-input-placeholder {
+  color: #dbdbdb;
+}
+
+::-ms-input-placeholder {
+  color: #dbdbdb;
+}
+
+::placeholder {
+  color: #dbdbdb;
+}
+
+.registration-top-menu {
+  width: 100%;
+}
+
+.registration-top-menu ul {
+  float: right;
+  margin: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.registration-top-menu ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.registration-top-menu ul li:hover {
+  color: #099ebb;
+  cursor: pointer;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.registration-block {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.registration-block .registration-block-header {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.input-block-header {
+  color: #adadad;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.input-block {
+  margin-bottom: 10px;
+}
+
+.input-block input {
+  height: 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  color: #dbdbdb;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.input-block input:focus {
+  width: 250px;
+}
+
+.input-block .registration-btn {
+  width: 200px;
+  height: 30px;
+  background-color: #099ebb;
+  color: #fff;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.input-block .registration-btn:hover {
+  background-color: #0db6d8;
+}
+/*# sourceMappingURL=registration.css.map */
