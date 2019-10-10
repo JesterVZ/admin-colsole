@@ -12,6 +12,28 @@ input {
   outline: none;
 }
 
+input[type=radio] {
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+input[type=radio]:checked + label {
+  color: #099ebb;
+}
+
+.registration-login {
+  text-align: center;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.registration-login span {
+  margin-right: 20px;
+}
+
 button {
   outline: none !important;
   border: none;
@@ -66,7 +88,7 @@ button {
 
 .registration-block .registration-block-header {
   font-size: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .input-block-header {
@@ -105,5 +127,38 @@ button {
 
 .input-block .registration-btn:hover {
   background-color: #0db6d8;
+}
+
+@media (max-width: 800px) {
+  .registration-btn {
+    height: 50px !important;
+    border-radius: 50px !important;
+    font-size: 20px !important;
+  }
+  .registration-block {
+    margin-top: 150px;
+  }
+  .registration-top-menu {
+    text-align: center;
+  }
+  .registration-top-menu ul {
+    float: unset;
+    padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .registration-top-menu {
+    font-size: 14px;
+  }
+  .registration-block-header {
+    font-size: 38px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .registration-top-menu {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=registration.css.map */
