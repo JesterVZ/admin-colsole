@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     $('.create-post' + '-btn').on('click', function() {
         showOverlay();
         showCreatePostForm('-create-post');
