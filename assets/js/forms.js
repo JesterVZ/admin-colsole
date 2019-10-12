@@ -1,5 +1,8 @@
 $(document).ready(function() {
-    
+    $('.settimgs-menu-block label').on('click', function(){
+        $('.popup-settings-title').text($(this).text());
+        $labelName = $(this).attr('class');
+    });
     $('.create-post' + '-btn').on('click', function() {
         showOverlay();
         showCreatePostForm('-create-post');

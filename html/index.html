@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../assets/sass/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!--bootstrap min-->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
     <!--google fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--font awersome-->
@@ -40,7 +42,8 @@
                 </div>
                 <div class="popup-create-post-editor-textarea">
                     <p class="lead emoji-picker-container">
-                        <textarea class="form-control textarea-control" rows="3" placeholder="Напишите пост" data-emojiable="true"></textarea>
+                        <textarea class="form-control textarea-control" rows="3" placeholder="Напишите пост"
+                            data-emojiable="true"></textarea>
                     </p>
                 </div>
                 <div class="editor-bottom-actions">
@@ -80,6 +83,55 @@
         </div>
         <div class="popup popup-settings">
             <i class="fa fa-times" aria-hidden="true"></i>
+            <div class="popup-settings-title">
+                Настройки
+            </div>
+            <div class="popup-settings-menu">
+                <div class="settimgs-menu-block project-name">
+                    <input type="radio" id="radio-project-name" name="settimgs-menu-block-radio"
+                        class="settimgs-menu-block-input" checked>
+                    <label for="radio-project-name" class="label-project-name">Название проекта</label>
+                </div>
+                <div class="settimgs-menu-block pages">
+                    <input type="radio" id="radio-pages" name="settimgs-menu-block-radio"
+                        class="settimgs-menu-block-input">
+                    <label for="radio-pages" class="label-pages">Страницы соц.сетей</label>
+                </div>
+                <div class="settimgs-menu-block results">
+                    <input type="radio" id="radio-results" name="settimgs-menu-block-radio"
+                        class="settimgs-menu-block-input">
+                    <label for="radio-results" class="label-results">Отчеты</label>
+                </div>
+                <div class="settimgs-menu-block link-public">
+                    <input type="radio" id="radio-link-public" name="settimgs-menu-block-radio"
+                        class="settimgs-menu-block-input">
+                    <label for="radio-link-public" class="label-link-public">Публикация ссылок</label>
+                </div>
+                <div class="settimgs-menu-block errors-history">
+                    <input type="radio" id="radio-errors-history" name="settimgs-menu-block-radio"
+                        class="settimgs-menu-block-input">
+                    <label for="radio-errors-history" class="label-errors-history">История ошибок</label>
+                </div>
+
+            </div>
+            <div class="settings-content-block">
+                <div class="content-block-project-name">
+                    <div class="content-block-header">Название проекта</div>
+                    <input type="text">
+                </div>
+                <div class="content-block-pages">
+                        <img src="../assets/img/svg/not-found.svg" alt="">
+                        <div class="pages-header">
+                            Нет подключенных страниц
+                        </div>
+                        <div class="pages-descr">
+                            Добавьте страницы, чтобы следить за состоянием СММ, делать запланированные посты
+                        </div>
+                        <div class="content-block-results">
+                            
+                        </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="settings-menu">
@@ -144,7 +196,7 @@
     <!-- End emoji-picker JavaScript -->
     <script src="../assets/js/wow.min.js"></script>
     <script>
-        $(function() {
+        $(function () {
             // Initializes and creates emoji set from sprite sheet
             window.emojiPicker = new EmojiPicker({
                 emojiable_selector: '[data-emojiable=true]',
