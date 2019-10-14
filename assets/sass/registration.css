@@ -45,19 +45,19 @@ button {
 }
 
 ::-webkit-input-placeholder {
-  color: #dbdbdb;
+  color: #b9b9b9;
 }
 
 :-ms-input-placeholder {
-  color: #dbdbdb;
+  color: #b9b9b9;
 }
 
 ::-ms-input-placeholder {
-  color: #dbdbdb;
+  color: #b9b9b9;
 }
 
 ::placeholder {
-  color: #dbdbdb;
+  color: #b9b9b9;
 }
 
 .registration-top-menu {
@@ -109,7 +109,7 @@ button {
   height: 30px;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
-  color: #dbdbdb;
+  color: #b9b9b9;
   width: 200px;
   padding-left: 10px;
 }
@@ -120,7 +120,8 @@ button {
 
 .input-block .registration-btn {
   width: 200px;
-  height: 30px;
+  height: 50px;
+  font-weight: bold;
   background-color: #099ebb;
   color: #fff;
   border-radius: 20px;

@@ -123,6 +123,10 @@ button {
   cursor: pointer;
 }
 
+.emoji-wysiwyg-editor {
+  line-height: 1.5 !important;
+}
+
 .fa-times {
   position: absolute;
   right: 0;
@@ -230,6 +234,7 @@ button {
   outline: none;
   padding: 10px;
   border: 1px solid #e6e6e6;
+  line-height: 1.5;
 }
 
 .popup-create-post .popup-create-post-editor .editor-top-actions, .popup-settings .popup-create-post-editor .editor-top-actions {
