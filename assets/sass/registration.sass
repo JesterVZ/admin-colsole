@@ -2,6 +2,8 @@ $input-border-color: #dbdbdb
 $placeholder-color: #b9b9b9
 $blue-color: #099ebb
 $bottom-transform: translateY(5px)
+$error-color: #d60000
+$success-color: #00BFA5
 *
     transition: 0.5s
 body
@@ -17,6 +19,25 @@ input[type=radio]:checked+label
     color: $blue-color
 #input-block-2
     display: none
+.registration-warning
+    position: fixed
+    text-align: center
+    bottom: 0
+    right: 0
+    width: 300px
+    height: 50px
+    margin: 0px 20px 20px 0px
+    color: #fff
+    border-radius: 10px
+    padding: 10px
+.error-block
+    box-shadow: 0px 0px 30px $error-color
+    background-color: $error-color
+.success-block
+    box-shadow: 0px 0px 30px $success-color
+    background-color: $success-color
+    height: 40px
+    padding-top: 20px
 .registration-login
     text-align: center
     padding-left: 20px
