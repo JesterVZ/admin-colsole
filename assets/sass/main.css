@@ -356,8 +356,23 @@ button {
   padding-left: 6%;
 }
 
+.settings-content-block .content-block-project-name {
+  display: none;
+}
+
+.settings-content-block .content-block-project-name input {
+  height: 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  color: #dbdbdb;
+  width: 200px;
+  padding-left: 10px;
+  outline: none;
+  width: 95%;
+}
+
 .settings-content-block .content-block-pages {
-  display: inline-block;
+  display: none;
   font-size: 20px;
   width: 100%;
   text-align: center;
@@ -375,25 +390,43 @@ button {
   margin-bottom: 40px;
 }
 
+.settings-content-block .content-block-results {
+  display: none;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.settings-content-block .content-block-results .results-descr {
+  color: #adadad;
+  font-size: 13px;
+}
+
+.settings-content-block .content-block-results img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.settings-content-block .content-block-errors {
+  display: block;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.settings-content-block .content-block-errors img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
 .content-block-header {
   color: #adadad;
   font-size: 13px;
   margin-bottom: 10px;
-}
-
-.content-block-project-name {
-  display: none;
-}
-
-.content-block-project-name input {
-  height: 30px;
-  border: 1px solid #dbdbdb;
-  border-radius: 5px;
-  color: #dbdbdb;
-  width: 200px;
-  padding-left: 10px;
-  outline: none;
-  width: 95%;
 }
 
 .popup-settings {

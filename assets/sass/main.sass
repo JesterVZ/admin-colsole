@@ -169,12 +169,23 @@ button
                     background-color: white
                     -webkit-transition: .4s
                     transition: .4s
-.settings-content-block
+.settings-content-block //контент настроек
     display: inline-block
     width: 68%
     padding-left: 6%
-    .content-block-pages
-        display: inline-block
+    .content-block-project-name //название проекта
+        display: none
+        input
+            height: 30px
+            border: 1px solid $input-border-color
+            border-radius: 5px
+            color: $input-border-color
+            width: 200px
+            padding-left: 10px
+            outline: none
+            width: 95%
+    .content-block-pages //подключенные страницы
+        display: none
         font-size: 20px
         width: 100%
         text-align: center
@@ -186,21 +197,34 @@ button
             width: 100px
             height: 100px
             margin-bottom: 40px
+    .content-block-results //отчеты
+        display: none
+        font-size: 20px
+        width: 100%
+        text-align: center
+        margin-top: 80px
+        .results-descr
+            color: $gray-color
+            font-size: 13px
+        img
+            width: 100px
+            height: 100px
+            margin-bottom: 40px
+    .content-block-errors //исторя ошибок
+        display: block
+        font-size: 20px
+        width: 100%
+        text-align: center
+        margin-top: 80px
+        img
+            width: 100px
+            height: 100px
+            margin-bottom: 40px
 .content-block-header
     color: #adadad
     font-size: 13px
     margin-bottom: 10px
-.content-block-project-name 
-    display: none
-    input
-        height: 30px
-        border: 1px solid $input-border-color
-        border-radius: 5px
-        color: $input-border-color
-        width: 200px
-        padding-left: 10px
-        outline: none
-        width: 95%
+
 .popup-settings
     padding-left: 0
     padding-bottom: 0
