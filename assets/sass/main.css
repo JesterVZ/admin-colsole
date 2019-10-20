@@ -139,6 +139,30 @@ button {
   cursor: pointer;
 }
 
+.main-content-menu {
+  display: inline-block;
+  padding-top: 20px;
+  width: 82%;
+  float: right;
+  height: 100%;
+}
+
+.add-post-block {
+  width: 200px;
+  height: 200px;
+  border: 2px dashed #e6e6e6;
+  text-align: center;
+  padding-top: 70px;
+  color: #adadad;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.add-post-block:hover {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .create-post-btns {
   margin-top: 10px;
   width: 100%;
